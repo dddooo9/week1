@@ -3,17 +3,17 @@
 
 {% block content %}
 <div class="start">
-    <h1>아래 세 개의 문에 사자 두 마리, 보석 하나가 숨겨져 있다.
-        <br>당신은 보석을 찾아야 한다.
-        <br>보석이 있을 것이라고 생각하는 문을 선택하라.</h1>    
+    <h1>세 번째 문을 선택하셨습니다.
+        <br>첫 번째 문에 사자가 있습니다.
+        <br>당신은 선택을 바꾸시겠습니까?
+    </h1>
 </div>
-    
 <div class="row">
     <div class="col-sm-6">
         <div class="card">
             <div class="card-body">
               <h5 class="card-title">1</h5>
-              <a href="{% url 'choice:door1' %}" class="btn btn-primary">1번 문 선택</a>
+              <a href="#" class="btn btn-primary">사자</a>
             </div>
         </div>
     </div>
@@ -21,7 +21,7 @@
         <div class="card">
             <div class="card-body">
               <h5 class="card-title">2</h5>
-                <a href="{% url 'choice:door2' %}" class="btn btn-primary">2번 문 선택</a>
+                <a href="{% url 'choice:door32' %}" class="btn btn-primary">2번 문 선택</a>
             </div>
         </div>
     </div>
@@ -29,10 +29,9 @@
         <div class="card">
             <div class="card-body">
               <h5 class="card-title">3</h5>
-              <a href="{% url 'choice:door3' %}" class="btn btn-primary">3번 문 선택</a>
+              <a href="{% url 'choice:door33' %}" class="btn btn-primary">3번 문 선택</a>
             </div>
         </div>
     </div>
 </div>
-
 {% endblock %}
