@@ -22,5 +22,8 @@ urlpatterns = [
     path('quiz/', include('quiz.urls')),
     path('choice/',include('choice.urls')),
     path('', views.main, name="main"),
+<<<<<<< HEAD
     path('posts/', include('posts.urls')),
+=======
+>>>>>>> 7eb0b380fe3242222e8ef10d581b6f7bb031dfbc
 ]
