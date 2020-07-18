@@ -16,14 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from . import views
+from django.conf import settings 
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('quiz/', include('quiz.urls')),
     path('choice/',include('choice.urls')),
     path('', views.main, name="main"),
-<<<<<<< HEAD
     path('posts/', include('posts.urls')),
-=======
->>>>>>> 7eb0b380fe3242222e8ef10d581b6f7bb031dfbc
 ]
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

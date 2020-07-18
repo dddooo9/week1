@@ -39,10 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'quiz',
     'choice',
-<<<<<<< HEAD
     'posts',
-=======
->>>>>>> 7eb0b380fe3242222e8ef10d581b6f7bb031dfbc
 ]
 
 MIDDLEWARE = [
@@ -128,3 +125,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'montyhall', 'static')
 ]
+
+MEDIA_URL='/media/'
+
+MEDIA_ROOT=os.path.join(BASE_DIR, 'montyhall', 'media')
